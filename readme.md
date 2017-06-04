@@ -3,33 +3,28 @@
 
 
 
-# tyda.py
+# hitta.py
 
-This is a very simple tool, written in python, that uses the native tyda.se http request to translate between Swedish and English.
-
+This is a very simple tool, written in python, that uses the native hitta.se http request to find the owner to a phone number.
+It is also possible to search for a name but it has to be a perfect match to work.
 
 
 
 ## Installation
 
-Clone the repo and run:
+Clone the repo and then run:
 
     pip install -r requirements.txt
 
-After that a translation can be made with:
+After that a phone number lookup can be made with:
 
-    ./tyda.py translation
+    ./hitta.py 555123123
 
 The result would be written in your terminal window:
 
-    translation
-    översättning
-    tolkning
-    återgivning
-    transformering
-    translation
-    omvandling
-
+    Title: The hitta.se title field
+    Type: Mobil
+    Tel: 555123123
 
 
 
@@ -37,10 +32,10 @@ The result would be written in your terminal window:
 
 Write a simple alias in your .bash_rc, .bash_completion or similar like this:
 
-    alias tyda='/home/your/path/to/tyda.py'
+    alias hitta='/home/your/path/to/hitta.py'
 
-After that you can translate anywhere in your terminal window by typing:
+After that you can lookup a number anywhere in your terminal window by typing:
 
-    tyda the_word_you_want_to_translate
+    hitta the_number_of_interest
 
 
