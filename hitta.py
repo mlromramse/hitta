@@ -36,4 +36,5 @@ if __name__ == '__main__':
     if len(sys.argv) < 2 or sys.argv[1][:1] == '-':
         print 'usage: hitta search_word'
         exit(0)
-    Hitta().hitta(sys.argv[1])
+    words = ' '.join(sys.argv[1:])
+    Hitta().hitta(words)
