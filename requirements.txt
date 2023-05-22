@@ -1,4 +1,4 @@
 bs4
-requests == 2.20.0
+requests == 2.31.0
 urllib3<1.25,>=1.21.1
 
